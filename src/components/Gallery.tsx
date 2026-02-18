@@ -17,7 +17,7 @@ const images = [
 
 const Gallery = () => {
   return (
-    <section id="galerija" className="py-24 md:py-32 bg-rose-light">
+    <section id="galerija" className="py-24 md:py-32 bg-blue-light">
       <div className="container max-w-6xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -26,13 +26,13 @@ const Gallery = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <p className="text-gold font-body text-sm tracking-[0.25em] uppercase mb-3">
+          <p className="text-blue font-body text-sm tracking-[0.25em] uppercase mb-3">
             Galerija
           </p>
           <h2 className="text-3xl md:text-5xl font-display text-foreground mb-6">
             Naše <span className="italic text-primary">kreacije</span>
           </h2>
-          <div className="w-16 h-px bg-gold mx-auto" />
+          <div className="w-16 h-px bg-blue mx-auto" />
         </motion.div>
 
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">

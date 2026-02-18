@@ -26,7 +26,7 @@ const offerings = [
 
 const Offerings = () => {
   return (
-    <section id="ponuda" className="py-24 md:py-32 bg-background">
+    <section id="ponuda" className="py-24 md:py-32 bg-mint-light">
       <div className="container max-w-5xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -35,13 +35,13 @@ const Offerings = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <p className="text-gold font-body text-sm tracking-[0.25em] uppercase mb-3">
+          <p className="text-mint font-body text-sm tracking-[0.25em] uppercase mb-3">
             Ponuda
           </p>
           <h2 className="text-3xl md:text-5xl font-display text-foreground mb-6">
             Šta <span className="italic text-primary">nudimo</span>
           </h2>
-          <div className="w-16 h-px bg-gold mx-auto" />
+          <div className="w-16 h-px bg-mint mx-auto" />
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-6 md:gap-8">
@@ -55,8 +55,8 @@ const Offerings = () => {
               className="bg-card border border-border rounded-lg p-8 hover:shadow-lg hover:shadow-primary/5 transition-shadow duration-500 group"
             >
               <div className="flex items-start gap-5">
-                <div className="w-14 h-14 shrink-0 rounded-full bg-rose-light flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                  <item.icon className="w-6 h-6 text-primary" />
+                <div className="w-14 h-14 shrink-0 rounded-full bg-mint-light flex items-center justify-center group-hover:bg-mint/20 transition-colors">
+                  <item.icon className="w-6 h-6 text-mint" />
                 </div>
                 <div>
                   <h3 className="font-display text-xl text-foreground mb-2">{item.title}</h3>

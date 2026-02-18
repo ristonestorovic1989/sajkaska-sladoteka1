@@ -11,7 +11,7 @@ const Hero = () => {
           alt="Elegantna svadbena torta sa cvetovima"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-foreground/60 via-foreground/40 to-foreground/70" />
+        <div className="absolute inset-0 bg-gradient-to-b from-foreground/70 via-primary/30 to-foreground/80" />
       </div>
 
       {/* Content */}
@@ -32,7 +32,7 @@ const Hero = () => {
         >
           Sajkaška
           <br />
-          <span className="italic text-gold-light">Sladoteka</span>
+          <span className="italic text-gradient-gold">Sladoteka</span>
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
