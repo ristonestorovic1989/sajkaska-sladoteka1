@@ -32,7 +32,7 @@ const Navbar = () => {
           <span className={scrolled ? "text-foreground" : "text-primary-foreground"}>
             Sajkaška{" "}
           </span>
-          <span className={`italic ${scrolled ? "text-primary" : "text-gold-light"}`}>
+          <span className={`italic ${scrolled ? "text-primary" : "text-gradient-gold"}`}>
             Sladoteka
           </span>
         </a>

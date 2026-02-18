@@ -3,7 +3,7 @@ import { Cake, Heart, Star } from "lucide-react";
 
 const About = () => {
   return (
-    <section id="o-nama" className="py-24 md:py-32 bg-background">
+    <section id="o-nama" className="py-24 md:py-32 bg-gradient-premium">
       <div className="container max-w-5xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -12,13 +12,13 @@ const About = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <p className="text-gold font-body text-sm tracking-[0.25em] uppercase mb-3">
+          <p className="text-accent font-body text-sm tracking-[0.25em] uppercase mb-3">
             O nama
           </p>
           <h2 className="text-3xl md:text-5xl font-display text-foreground mb-6">
             Slatka tradicija sa <span className="italic text-primary">ljubavlju</span>
           </h2>
-          <div className="w-16 h-px bg-gold mx-auto mb-8" />
+          <div className="w-16 h-px bg-accent mx-auto mb-8" />
           <p className="text-muted-foreground font-body text-lg leading-relaxed max-w-2xl mx-auto">
             Sajkaška Sladoteka je porodični posao posvećen stvaranju nezaboravnih slatkiša.
             Svaka torta i kolač su ručno pravljeni sa pažnjom, od najkvalitetnijih
@@ -55,8 +55,8 @@ const About = () => {
               transition={{ duration: 0.6, delay: i * 0.15 }}
               className="text-center group"
             >
-              <div className="w-16 h-16 mx-auto mb-5 rounded-full bg-rose-light flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                <item.icon className="w-7 h-7 text-primary" />
+              <div className="w-16 h-16 mx-auto mb-5 rounded-full bg-blue-light flex items-center justify-center group-hover:bg-accent/20 transition-colors">
+                <item.icon className="w-7 h-7 text-blue" />
               </div>
               <h3 className="font-display text-xl text-foreground mb-3">{item.title}</h3>
               <p className="text-muted-foreground font-body leading-relaxed text-sm">

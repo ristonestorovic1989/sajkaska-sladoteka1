@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="bg-foreground py-12 md:py-16">
       <div className="container max-w-5xl mx-auto px-6 text-center">
         <h3 className="font-display text-2xl md:text-3xl text-primary-foreground mb-2">
-          Sajkaška <span className="italic text-gold-light">Sladoteka</span>
+          Sajkaška <span className="italic text-gradient-gold">Sladoteka</span>
         </h3>
         <p className="text-primary-foreground/50 font-body text-sm mb-8">
           Domaće torte i kolači — Sajkaš, Vojvodina
@@ -16,7 +16,7 @@ const Footer = () => {
             href="https://www.instagram.com/sajkaska_sladoteka/"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-10 h-10 rounded-full border border-primary-foreground/20 flex items-center justify-center text-primary-foreground/60 hover:text-gold hover:border-gold transition-colors"
+            className="w-10 h-10 rounded-full border border-primary-foreground/20 flex items-center justify-center text-primary-foreground/60 hover:text-primary hover:border-primary transition-colors"
           >
             <Instagram className="w-4 h-4" />
           </a>
@@ -24,7 +24,7 @@ const Footer = () => {
             href="https://www.facebook.com/jelenabiljana.tortesajkas"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-10 h-10 rounded-full border border-primary-foreground/20 flex items-center justify-center text-primary-foreground/60 hover:text-gold hover:border-gold transition-colors"
+            className="w-10 h-10 rounded-full border border-primary-foreground/20 flex items-center justify-center text-primary-foreground/60 hover:text-primary hover:border-primary transition-colors"
           >
             <Facebook className="w-4 h-4" />
           </a>

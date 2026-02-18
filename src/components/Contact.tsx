@@ -12,13 +12,13 @@ const Contact = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <p className="text-gold font-body text-sm tracking-[0.25em] uppercase mb-3">
+          <p className="text-primary font-body text-sm tracking-[0.25em] uppercase mb-3">
             Kontakt
           </p>
           <h2 className="text-3xl md:text-5xl font-display text-foreground mb-6">
             Javite nam <span className="italic text-primary">se</span>
           </h2>
-          <div className="w-16 h-px bg-gold mx-auto mb-8" />
+          <div className="w-16 h-px bg-primary mx-auto mb-8" />
           <p className="text-muted-foreground font-body text-lg max-w-xl mx-auto">
             Želite da naručite tortu ili imate pitanje? Kontaktirajte nas putem
             društvenih mreža ili telefona — rado ćemo vam pomoći!
