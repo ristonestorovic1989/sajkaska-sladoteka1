@@ -11,7 +11,7 @@ const Hero = () => {
           alt="Elegantna svadbena torta sa cvetovima"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-foreground/70 via-primary/30 to-foreground/80" />
+        <div className="absolute inset-0 bg-gradient-to-b from-foreground/80 via-foreground/60 to-foreground/85" />
       </div>
 
       {/* Content */}
@@ -20,7 +20,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-gold-light font-body text-sm tracking-[0.3em] uppercase mb-4"
+          className="text-mint-light font-body text-sm tracking-[0.3em] uppercase mb-4"
         >
           Domaće torte i kolači
         </motion.p>
