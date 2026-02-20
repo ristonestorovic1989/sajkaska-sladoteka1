@@ -17,8 +17,10 @@ const images = [
 
 const Gallery = () => {
   return (
-    <section id="galerija" className="py-24 md:py-32 bg-blue-light">
-      <div className="container max-w-6xl mx-auto px-6">
+    <section id="galerija" className="py-24 md:py-32 bg-blue-light relative overflow-hidden">
+      <div className="absolute top-0 left-1/2 w-[600px] h-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary/5 blur-3xl" />
+
+      <div className="container max-w-6xl mx-auto px-6 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -32,18 +34,25 @@ const Gallery = () => {
           <h2 className="text-3xl md:text-5xl font-display text-foreground mb-6">
             Naše <span className="italic text-primary">kreacije</span>
           </h2>
-          <div className="w-16 h-px bg-blue mx-auto" />
+          <div className="flex items-center justify-center gap-2">
+            <div className="w-8 h-px bg-blue/40" />
+            <div className="w-2 h-2 rounded-full bg-blue/60" />
+            <div className="w-16 h-px bg-primary" />
+            <div className="w-2 h-2 rounded-full bg-primary/60" />
+            <div className="w-8 h-px bg-primary/40" />
+          </div>
         </motion.div>
 
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
           {images.map((img, i) => (
             <motion.div
               key={img.label}
-              initial={{ opacity: 0, scale: 0.95 }}
+              initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true, margin: "-30px" }}
-              transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="group relative aspect-square rounded-lg overflow-hidden cursor-pointer"
+              transition={{ duration: 0.6, delay: i * 0.08 }}
+              whileHover={{ scale: 1.03 }}
+              className="group relative aspect-square rounded-2xl overflow-hidden cursor-pointer shadow-md hover:shadow-xl hover:shadow-primary/10 transition-shadow duration-500"
             >
               <img
                 src={img.src}
@@ -51,10 +60,13 @@ const Gallery = () => {
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 loading="lazy"
               />
-              <div className="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/40 transition-colors duration-500 flex items-end justify-center pb-6">
-                <span className="text-primary-foreground font-display text-lg opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-500">
+              <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 via-foreground/0 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end justify-center pb-6">
+                <motion.span
+                  initial={false}
+                  className="text-primary-foreground font-display text-lg translate-y-4 group-hover:translate-y-0 transition-transform duration-500"
+                >
                   {img.label}
-                </span>
+                </motion.span>
               </div>
             </motion.div>
           ))}
