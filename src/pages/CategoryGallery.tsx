@@ -4,15 +4,23 @@ import { ArrowLeft } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-// Import all gallery images
 import gallery1 from "@/assets/gallery-1.jpg";
 import gallery2 from "@/assets/gallery-2.jpg";
 import gallery3 from "@/assets/gallery-3.jpg";
 import gallery4 from "@/assets/gallery-4.jpg";
 import gallery5 from "@/assets/gallery-5.jpg";
 import gallery6 from "@/assets/gallery-6.jpg";
+import catSitniKolaci from "@/assets/cat-sitni-kolaci.jpg";
+import catKupovi from "@/assets/cat-kupovi.jpg";
+import catSladoled from "@/assets/cat-sladoled.jpg";
+import palacinka1 from "@/assets/palacinka-1.jpg";
+import palacinka2 from "@/assets/palacinka-2.jpg";
+import palacinka3 from "@/assets/palacinka-3.jpg";
+import palacinka4 from "@/assets/palacinka-4.jpg";
+import palacinka5 from "@/assets/palacinka-5.jpg";
+import palacinka6 from "@/assets/palacinka-6.jpg";
 
-type CategoryKey = "torte" | "sitni-kolaci" | "palacinke" | "kupovi";
+type CategoryKey = "torte" | "sitni-kolaci" | "palacinke" | "kupovi" | "sladoled";
 
 interface CategoryData {
   title: string;
@@ -36,17 +44,35 @@ const categoryData: Record<CategoryKey, CategoryData> = {
   "sitni-kolaci": {
     title: "Sitni kolači",
     subtitle: "Domaći kolači za svaki slatki sto",
-    images: [],
+    images: [
+      { src: catSitniKolaci, alt: "Kutije sitnih kolača" },
+    ],
   },
   palacinke: {
     title: "Palačinke",
     subtitle: "Savršene palačinke sa raznim filovima",
-    images: [],
+    images: [
+      { src: palacinka1, alt: "Palačinka sa čokoladom i lešnicima" },
+      { src: palacinka2, alt: "Dubai palačinka sa pistaćima" },
+      { src: palacinka3, alt: "Palačinka sa šlagom i keksom" },
+      { src: palacinka4, alt: "Palačinka u ambijentu kafića" },
+      { src: palacinka5, alt: "Palačinka sa pistaćima i čokoladom" },
+      { src: palacinka6, alt: "Palačinke sa malinama i čokoladom" },
+    ],
   },
   kupovi: {
     title: "Kupovi",
     subtitle: "Dekorativni kupovi za sve prilike",
-    images: [],
+    images: [
+      { src: catKupovi, alt: "Zlatni rođendanski kup sa slatkišima" },
+    ],
+  },
+  sladoled: {
+    title: "Sladoled",
+    subtitle: "Kremasti sladoledi sa raznim prelirima",
+    images: [
+      { src: catSladoled, alt: "Sladoled u čaši sa čokoladnim prelivom" },
+    ],
   },
 };
 
