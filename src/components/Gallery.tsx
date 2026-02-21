@@ -7,12 +7,12 @@ import gallery5 from "@/assets/gallery-5.jpg";
 import gallery6 from "@/assets/gallery-6.jpg";
 
 const images = [
-  { src: gallery1, alt: "Elegantni petit four kolačići", label: "Sitni kolači" },
-  { src: gallery2, alt: "Čokoladna drip torta", label: "Čokoladne torte" },
-  { src: gallery3, alt: "Rođendanska torta sa cvetovima", label: "Rođendanske torte" },
-  { src: gallery4, alt: "Cupcakes sa ružama", label: "Cupcakes" },
-  { src: gallery5, alt: "Voćna torta sa kremom", label: "Voćne torte" },
-  { src: gallery6, alt: "Slatki sto za proslavu", label: "Slatki stolovi" },
+  { src: gallery1, alt: "Elegantna bela torta sa zlatnim srcima", label: "Elegantne torte" },
+  { src: gallery2, alt: "Crno-zlatna torta za 18. rođendan", label: "Rođendanske torte" },
+  { src: gallery3, alt: "Roze drip torta sa ružama i makronima", label: "Drip torte" },
+  { src: gallery4, alt: "Svadbena torta sa ružama", label: "Svadbene torte" },
+  { src: gallery5, alt: "Bela svadbena torta sa cvećem i zlatnim detaljima", label: "Luksuzne torte" },
+  { src: gallery6, alt: "Dečija torta sa medvedićem", label: "Dečije torte" },
 ];
 
 const Gallery = () => {
