@@ -33,24 +33,18 @@ const Navbar = () => {
       }`}
     >
       <div className="container max-w-6xl mx-auto px-6 flex items-center justify-between h-16 md:h-20">
-        <a href="#" className="flex items-center gap-3 group">
-          <div 
-            className={`h-14 md:h-20 w-14 md:w-20 transition-all duration-300 ${scrolled ? "bg-foreground" : "bg-primary-foreground"}`}
-            style={{ 
-              WebkitMaskImage: `url(${logoInverted})`, 
-              maskImage: `url(${logoInverted})`, 
-              WebkitMaskSize: "contain", 
-              maskSize: "contain", 
-              WebkitMaskRepeat: "no-repeat", 
-              maskRepeat: "no-repeat",
-              WebkitMaskPosition: "center",
-              maskPosition: "center",
-              maskMode: "luminance"
-            } as React.CSSProperties} 
+        <a href="#" className="flex items-center gap-1.5 group">
+          <img 
+            src={scrolled ? logo : logoInverted} 
+            alt="Logo" 
+            className="h-10 md:h-14 w-auto mix-blend-multiply"
+            style={scrolled ? {} : { mixBlendMode: "screen" }}
           />
-          <span className={`font-display text-lg md:text-xl transition-colors duration-300 ${scrolled ? "text-foreground" : "text-primary-foreground"}`}>
-            Šajkaška <span className={`italic ${scrolled ? "text-primary" : "text-gradient-gold"}`}>Sladoteka</span>
-          </span>
+          <div className={`font-display text-lg md:text-xl leading-tight transition-colors duration-300 ${scrolled ? "text-foreground" : "text-primary-foreground"}`}>
+            <span>Šajkaška</span>
+            <br />
+            <span className={`italic text-sm md:text-base ${scrolled ? "text-primary" : "text-gradient-gold"}`}>Sladoteka</span>
+          </div>
         </a>
 
         {/* Desktop */}
