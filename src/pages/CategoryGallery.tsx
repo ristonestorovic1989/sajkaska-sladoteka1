@@ -10,6 +10,16 @@ import gallery3 from "@/assets/gallery-3.jpg";
 import gallery4 from "@/assets/gallery-4.jpg";
 import gallery5 from "@/assets/gallery-5.jpg";
 import gallery6 from "@/assets/gallery-6.jpg";
+import torta1 from "@/assets/torta-1.jpg";
+import torta2 from "@/assets/torta-2.jpg";
+import torta3 from "@/assets/torta-3.jpg";
+import torta4 from "@/assets/torta-4.jpg";
+import torta5 from "@/assets/torta-5.jpg";
+import torta6 from "@/assets/torta-6.jpg";
+import torta7 from "@/assets/torta-7.jpg";
+import torta8 from "@/assets/torta-8.jpg";
+import torta9 from "@/assets/torta-9.jpg";
+import torta10 from "@/assets/torta-10.jpg";
 import catSitniKolaci from "@/assets/cat-sitni-kolaci.jpg";
 import catKupovi from "@/assets/cat-kupovi.jpg";
 import catSladoled from "@/assets/cat-sladoled.jpg";
@@ -33,6 +43,16 @@ const categoryData: Record<CategoryKey, CategoryData> = {
     title: "Torte",
     subtitle: "Elegantne torte za svaku priliku",
     images: [
+      { src: torta1, alt: "Svadbena torta sa biserima i ružama" },
+      { src: torta2, alt: "Rođendanska torta sa crvenim ružama" },
+      { src: torta3, alt: "Elegantna torta sa krunom i mašnom" },
+      { src: torta4, alt: "Tematska torta sa muzičkim motivima" },
+      { src: torta5, alt: "Svadbena torta sa ružičastim ružama" },
+      { src: torta6, alt: "Jack Daniels tematska torta" },
+      { src: torta7, alt: "Dečije torte sa medvedićima i leptirima" },
+      { src: torta8, alt: "Svadbena torta sa zlatnim postoljem" },
+      { src: torta9, alt: "Dečija torta sa medvedićem i balonima" },
+      { src: torta10, alt: "Crno-zlatna torta za 18. rođendan" },
       { src: gallery1, alt: "Elegantna torta sa cvetnim detaljima" },
       { src: gallery2, alt: "Rođendanska torta sa zlatnim ukrasima" },
       { src: gallery3, alt: "Svadbena torta sa ružama" },
