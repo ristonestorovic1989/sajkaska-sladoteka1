@@ -37,7 +37,6 @@ const Hero = () => {
           transition={{ duration: 1, delay: 0.1 }}
           className="inline-flex items-center gap-2 px-5 py-2 rounded-full border border-primary-foreground/20 bg-primary-foreground/5 backdrop-blur-sm mb-8"
         >
-          
           <span className="text-mint-light font-body text-xs tracking-[0.3em] uppercase">
             Domaće torte i kolači
           </span>
@@ -49,7 +48,7 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.3 }}
           className="text-5xl md:text-7xl lg:text-8xl font-display font-medium text-primary-foreground mb-6 leading-tight"
         >
-          Sajkaška
+          Šajkaška
           <br />
           <motion.span
             initial={{ opacity: 0, x: -20 }}
@@ -67,8 +66,8 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.7 }}
           className="text-primary-foreground/80 font-body text-lg md:text-xl font-light max-w-xl mx-auto mb-12"
         >
-          Svaki zalogaj priča priču — ručno pravljene torte i kolači
-          za vaše najlepše trenutke
+          Svaki zalogaj priča priču — ručno pravljene torte i kolači za vaše
+          najlepše trenutke
         </motion.p>
 
         <motion.div
@@ -92,7 +91,6 @@ const Hero = () => {
           </a>
         </motion.div>
       </div>
-
     </section>
   );
 };

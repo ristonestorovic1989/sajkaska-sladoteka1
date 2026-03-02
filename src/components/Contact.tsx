@@ -14,7 +14,7 @@ const contacts = [
     href: "https://www.facebook.com/jelenabiljana.tortesajkas",
     icon: Facebook,
     title: "Facebook",
-    subtitle: "Sajkaška Sladoteka",
+    subtitle: "Šajkaška Sladoteka",
     external: true,
     color: "blue",
   },
@@ -30,7 +30,7 @@ const contacts = [
     href: null,
     icon: MapPin,
     title: "Lokacija",
-    subtitle: "Sajkaš, Vojvodina",
+    subtitle: "Šajkaš, Vojvodina",
     external: false,
     color: "primary",
   },
@@ -38,7 +38,10 @@ const contacts = [
 
 const Contact = () => {
   return (
-    <section id="kontakt" className="py-24 md:py-32 bg-rose-light relative overflow-hidden">
+    <section
+      id="kontakt"
+      className="py-24 md:py-32 bg-rose-light relative overflow-hidden"
+    >
       <div className="absolute top-1/2 right-0 w-96 h-96 rounded-full bg-primary/5 blur-3xl translate-x-1/2 -translate-y-1/2" />
       <div className="absolute bottom-0 left-0 w-64 h-64 rounded-full bg-accent/5 blur-3xl -translate-x-1/3 translate-y-1/3" />
 
@@ -73,7 +76,12 @@ const Contact = () => {
           {contacts.map((item, i) => {
             const Wrapper = item.href ? "a" : "div";
             const wrapperProps = item.href
-              ? { href: item.href, ...(item.external ? { target: "_blank", rel: "noopener noreferrer" } : {}) }
+              ? {
+                  href: item.href,
+                  ...(item.external
+                    ? { target: "_blank", rel: "noopener noreferrer" }
+                    : {}),
+                }
               : {};
 
             return (
@@ -93,20 +101,30 @@ const Contact = () => {
                     whileHover={{ scale: 1.1, rotate: 5 }}
                     transition={{ type: "spring", stiffness: 300 }}
                     className={`w-12 h-12 rounded-xl flex items-center justify-center transition-colors ${
-                      item.color === "primary" ? "bg-rose-light group-hover:bg-primary/20" :
-                      item.color === "accent" ? "bg-mint-light group-hover:bg-accent/20" :
-                      "bg-blue-light group-hover:bg-blue/20"
+                      item.color === "primary"
+                        ? "bg-rose-light group-hover:bg-primary/20"
+                        : item.color === "accent"
+                          ? "bg-mint-light group-hover:bg-accent/20"
+                          : "bg-blue-light group-hover:bg-blue/20"
                     }`}
                   >
-                    <item.icon className={`w-5 h-5 ${
-                      item.color === "primary" ? "text-primary" :
-                      item.color === "accent" ? "text-accent" :
-                      "text-blue"
-                    }`} />
+                    <item.icon
+                      className={`w-5 h-5 ${
+                        item.color === "primary"
+                          ? "text-primary"
+                          : item.color === "accent"
+                            ? "text-accent"
+                            : "text-blue"
+                      }`}
+                    />
                   </motion.div>
                   <div className="flex-1">
-                    <p className="font-display text-foreground text-lg">{item.title}</p>
-                    <p className="text-muted-foreground text-sm font-body">{item.subtitle}</p>
+                    <p className="font-display text-foreground text-lg">
+                      {item.title}
+                    </p>
+                    <p className="text-muted-foreground text-sm font-body">
+                      {item.subtitle}
+                    </p>
                   </div>
                   {item.external && (
                     <ArrowUpRight className="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors" />
