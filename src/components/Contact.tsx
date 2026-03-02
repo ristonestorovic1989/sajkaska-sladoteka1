@@ -30,7 +30,7 @@ const contacts = [
     href: null,
     icon: MapPin,
     title: "Lokacija",
-    subtitle: "Šajkaš, Vojvodina",
+    subtitle: "Nikole Tesle 41, 21244, Šajkaš",
     external: false,
     color: "primary",
   },
