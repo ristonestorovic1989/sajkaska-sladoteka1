@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-
+import { Cake, CakeSlice, IceCreamCone, Cookie, Cherry, Croissant } from "lucide-react";
 import gallery1 from "@/assets/gallery-1.jpg";
 import catSitniKolaci from "@/assets/cat-sitni-kolaci.jpg";
 import catPalacinke from "@/assets/cat-palacinke.jpg";
@@ -20,23 +20,14 @@ const Gallery = () => {
     <section id="galerija" className="py-24 md:py-32 bg-blue-light relative overflow-hidden">
       <div className="absolute top-0 left-1/2 w-[600px] h-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary/5 blur-3xl" />
 
-      {/* Decorative background images */}
-      <div className="absolute inset-0 pointer-events-none select-none">
-        {categories.slice(0, 3).map((cat, i) => (
-          <img
-            key={cat.slug}
-            src={cat.image}
-            alt=""
-            aria-hidden="true"
-            className="absolute opacity-[0.04] blur-[2px] w-48 md:w-72"
-            style={{
-              top: `${10 + i * 30}%`,
-              left: i % 2 === 0 ? '-3%' : undefined,
-              right: i % 2 !== 0 ? '-3%' : undefined,
-              transform: `rotate(${i % 2 === 0 ? -12 : 12}deg)`,
-            }}
-          />
-        ))}
+      {/* Decorative background icons */}
+      <div className="absolute inset-0 pointer-events-none select-none text-primary/[0.07]">
+        <Cake className="absolute top-[8%] left-[5%] w-20 h-20 md:w-28 md:h-28 rotate-[-15deg]" />
+        <CakeSlice className="absolute top-[15%] right-[8%] w-16 h-16 md:w-24 md:h-24 rotate-[12deg]" />
+        <IceCreamCone className="absolute top-[45%] left-[3%] w-14 h-14 md:w-20 md:h-20 rotate-[-8deg]" />
+        <Cookie className="absolute top-[55%] right-[5%] w-18 h-18 md:w-24 md:h-24 rotate-[20deg]" />
+        <Cherry className="absolute bottom-[15%] left-[10%] w-12 h-12 md:w-18 md:h-18 rotate-[10deg]" />
+        <Croissant className="absolute bottom-[10%] right-[10%] w-16 h-16 md:w-22 md:h-22 rotate-[-12deg]" />
       </div>
 
       <div className="container max-w-7xl mx-auto px-6 relative z-10">
