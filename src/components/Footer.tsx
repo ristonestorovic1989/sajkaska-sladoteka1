@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+﻿import { motion } from "framer-motion";
 import { Facebook, Heart, Instagram } from "lucide-react";
 
 const Footer = () => {
@@ -14,11 +14,10 @@ const Footer = () => {
           transition={{ duration: 0.6 }}
         >
           <h3 className="mb-2 text-2xl font-display text-primary-foreground md:text-3xl">
-            Sajkaska{" "}
-            <span className="italic text-gradient-gold">Sladoteka</span>
+            Šajkaška <span className="italic text-gradient-gold">Sladoteka</span>
           </h3>
           <p className="mb-8 text-sm font-body text-primary-foreground/50">
-            Domaće torte i kolaci - Šajkaš, Vojvodina
+            Domaće torte i kolači - Šajkaš, Vojvodina
           </p>
 
           <div className="mb-8 flex items-center justify-center gap-4">
@@ -46,7 +45,7 @@ const Footer = () => {
 
           <div className="mx-auto mb-6 h-px w-16 bg-primary-foreground/10" />
           <p className="flex items-center justify-center gap-1 text-xs font-body text-primary-foreground/30">
-            &copy; {new Date().getFullYear()} Sajkaska Sladoteka. Napravljeno sa
+            &copy; {new Date().getFullYear()} Šajkaška Sladoteka. Napravljeno sa
             <Heart className="inline h-3 w-3 text-primary" />
           </p>
           <p className="mt-3 text-xs font-body text-primary-foreground/45">

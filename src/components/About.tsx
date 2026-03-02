@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+﻿import { motion } from "framer-motion";
 import { Cake, Heart, Star } from "lucide-react";
 
 const items = [
@@ -20,7 +20,7 @@ const items = [
     icon: Star,
     title: "Za svaku priliku",
     description:
-      "Svadbe, rođendani, slave ili bilo koji poseban trenutak — tu smo za vas.",
+      "Svadbe, rođendani, slave ili bilo koji poseban trenutak - tu smo za vas.",
     color: "blue" as const,
   },
 ];
@@ -66,7 +66,7 @@ const About = () => {
           <p className="text-muted-foreground font-body text-lg leading-relaxed max-w-2xl mx-auto">
             Šajkaška Sladoteka je porodični posao posvećen stvaranju
             nezaboravnih slatkiša. Svaka torta i kolač su ručno pravljeni sa
-            pažnjom, od najkvalitetnijih sastojaka — jer verujemo da svaki
+            pažnjom, od najkvalitetnijih sastojaka - jer verujemo da svaki
             poseban trenutak zaslužuje savršen zalogaj.
           </p>
         </motion.div>

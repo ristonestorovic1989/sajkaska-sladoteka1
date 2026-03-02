@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+﻿import { motion } from "framer-motion";
 import heroCake from "@/assets/hero-cake.jpg";
 
 const Hero = () => {
@@ -66,7 +66,7 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.7 }}
           className="text-primary-foreground/80 font-body text-lg md:text-xl font-light max-w-xl mx-auto mb-12"
         >
-          Svaki zalogaj priča priču — ručno pravljene torte i kolači za vaše
+          Svaki zalogaj priča priču - ručno pravljene torte i kolači za vaše
           najlepše trenutke
         </motion.p>
 

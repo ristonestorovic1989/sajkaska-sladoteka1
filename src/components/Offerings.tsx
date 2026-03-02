@@ -1,29 +1,33 @@
-import { motion } from "framer-motion";
+﻿import { motion } from "framer-motion";
 import { Cake, Cookie, UtensilsCrossed, PartyPopper } from "lucide-react";
 
 const offerings = [
   {
     icon: Cake,
     title: "Svadbene torte",
-    description: "Elegantne višespratne torte po meri, ukrašene cvetovima, čipkom i fondanom za vaš najlepši dan.",
+    description:
+      "Elegantne višespratne torte po meri, ukrašene cvetovima, čipkom i fondanom za vaš najlepši dan.",
     accent: "primary",
   },
   {
     icon: PartyPopper,
     title: "Rođendanske torte",
-    description: "Kreativne tematske torte za decu i odrasle — od klasičnih do potpuno personalizovanih dizajna.",
+    description:
+      "Kreativne tematske torte za decu i odrasle - od klasičnih do potpuno personalizovanih dizajna.",
     accent: "accent",
   },
   {
     icon: Cookie,
     title: "Sitni kolači",
-    description: "Domaći kolači, cupcakes, makronsi i petit four za svaki slatki sto i svečanu priliku.",
+    description:
+      "Domaći kolači, cupcakes, makronsi i petit four za svaki slatki sto i svečanu priliku.",
     accent: "blue",
   },
   {
     icon: UtensilsCrossed,
     title: "Slatki stolovi",
-    description: "Kompletna organizacija slatkog stola za svadbe, krštenja, rođendane i korporativne događaje.",
+    description:
+      "Kompletna organizacija slatkog stola za svadbe, krštenja, rođendane i korporativne događaje.",
     accent: "primary",
   },
 ];
@@ -73,16 +77,22 @@ const Offerings = () => {
                   whileHover={{ rotate: 10, scale: 1.1 }}
                   transition={{ type: "spring", stiffness: 300 }}
                   className={`w-14 h-14 shrink-0 rounded-2xl flex items-center justify-center transition-all duration-300 ${
-                    item.accent === "primary" ? "bg-rose-light group-hover:glow-pink" :
-                    item.accent === "accent" ? "bg-mint-light group-hover:glow-mint" :
-                    "bg-blue-light"
+                    item.accent === "primary"
+                      ? "bg-rose-light group-hover:glow-pink"
+                      : item.accent === "accent"
+                        ? "bg-mint-light group-hover:glow-mint"
+                        : "bg-blue-light"
                   }`}
                 >
-                  <item.icon className={`w-6 h-6 ${
-                    item.accent === "primary" ? "text-primary" :
-                    item.accent === "accent" ? "text-accent" :
-                    "text-blue"
-                  }`} />
+                  <item.icon
+                    className={`w-6 h-6 ${
+                      item.accent === "primary"
+                        ? "text-primary"
+                        : item.accent === "accent"
+                          ? "text-accent"
+                          : "text-blue"
+                    }`}
+                  />
                 </motion.div>
                 <div>
                   <h3 className="font-display text-xl text-foreground mb-2">{item.title}</h3>

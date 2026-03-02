@@ -1,6 +1,14 @@
-import { useParams, Link } from "react-router-dom";
+﻿import { useParams, Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowLeft, Cake, CakeSlice, IceCreamCone, Cookie, Cherry, Croissant } from "lucide-react";
+import {
+  ArrowLeft,
+  Cake,
+  CakeSlice,
+  IceCreamCone,
+  Cookie,
+  Cherry,
+  Croissant,
+} from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
@@ -70,9 +78,7 @@ const categoryData: Record<CategoryKey, CategoryData> = {
   "sitni-kolaci": {
     title: "Sitni kolači",
     subtitle: "Domaći kolači za svaki slatki sto",
-    images: [
-      { src: catSitniKolaci, alt: "Kutije sitnih kolača" },
-    ],
+    images: [{ src: catSitniKolaci, alt: "Kutije sitnih kolača" }],
   },
   palacinke: {
     title: "Palačinke",
@@ -89,16 +95,12 @@ const categoryData: Record<CategoryKey, CategoryData> = {
   kupovi: {
     title: "Kupovi",
     subtitle: "Dekorativni kupovi za sve prilike",
-    images: [
-      { src: catKupovi, alt: "Zlatni rođendanski kup sa slatkišima" },
-    ],
+    images: [{ src: catKupovi, alt: "Zlatni rođendanski kup sa slatkišima" }],
   },
   sladoled: {
     title: "Sladoled",
-    subtitle: "Kremasti sladoledi sa raznim prelirima",
-    images: [
-      { src: catSladoled, alt: "Sladoled u čaši sa čokoladnim prelivom" },
-    ],
+    subtitle: "Kremasti sladoledi sa raznim prelivima",
+    images: [{ src: catSladoled, alt: "Sladoled u čaši sa čokoladnim prelivom" }],
   },
 };
 
@@ -128,7 +130,6 @@ const CategoryGallery = () => {
       <Navbar />
 
       <main className="flex-1 pt-24 md:pt-32 pb-16 bg-blue-light relative overflow-hidden">
-        {/* Decorative background icons */}
         <div className="absolute inset-0 pointer-events-none select-none text-primary/[0.07]">
           <Cake className="absolute top-[8%] left-[5%] w-20 h-20 md:w-28 md:h-28 rotate-[-15deg]" />
           <CakeSlice className="absolute top-[15%] right-[8%] w-16 h-16 md:w-24 md:h-24 rotate-[12deg]" />
@@ -159,9 +160,7 @@ const CategoryGallery = () => {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h1 className="text-3xl md:text-5xl font-display text-foreground mb-3">
-              {data.title}
-            </h1>
+            <h1 className="text-3xl md:text-5xl font-display text-foreground mb-3">{data.title}</h1>
             <p className="text-muted-foreground font-body">{data.subtitle}</p>
             <div className="flex items-center justify-center gap-2 mt-4">
               <div className="w-8 h-px bg-primary/40" />
@@ -199,9 +198,7 @@ const CategoryGallery = () => {
               transition={{ delay: 0.3 }}
               className="text-center py-20"
             >
-              <p className="text-muted-foreground font-body text-lg">
-                Slike uskoro dolaze! 📸
-              </p>
+              <p className="text-muted-foreground font-body text-lg">Slike uskoro dolaze!</p>
             </motion.div>
           )}
         </div>

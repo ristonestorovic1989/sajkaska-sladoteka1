@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+﻿import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import {
   ArrowUpRight,
@@ -32,22 +32,22 @@ const categories: Category[] = [
     slug: "torte",
     label: "Torte",
     image: gallery1,
-    vibe: "Wedding, rodjendani, tematske",
-    note: "Rucni rad i premium dekoracije",
+    vibe: "Svadbe, rođendani, tematske",
+    note: "Ručni rad i premijum dekoracije",
     featured: true,
     size: "large",
   },
   {
     slug: "sitni-kolaci",
-    label: "Sitni kolaci",
+    label: "Sitni kolači",
     image: catSitniKolaci,
-    vibe: "Cocktail i slavske selekcije",
+    vibe: "Koktel i slavske selekcije",
     note: "Elegantne mini forme i puni ukusi",
     size: "tall",
   },
   {
     slug: "palacinke",
-    label: "Palacinke",
+    label: "Palačinke",
     image: catPalacinke,
     vibe: "Slatke i kremaste kombinacije",
     note: "Topla priprema i bogati filovi",
@@ -57,7 +57,7 @@ const categories: Category[] = [
     slug: "sladoled",
     label: "Sladoled",
     image: catSladoled,
-    vibe: "Osvezavajuci domaci ukusi",
+    vibe: "Osvežavajući domaći ukusi",
     note: "Kremaste baze i sezonske arome",
     size: "default",
   },

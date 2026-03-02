@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+﻿import { motion } from "framer-motion";
 import { Instagram, Facebook, Phone, MapPin, ArrowUpRight } from "lucide-react";
 
 const contacts = [
@@ -68,7 +68,7 @@ const Contact = () => {
           </div>
           <p className="text-muted-foreground font-body text-lg max-w-xl mx-auto">
             Želite da naručite tortu ili imate pitanje? Kontaktirajte nas putem
-            društvenih mreža ili telefona — rado ćemo vam pomoći!
+            društvenih mreža ili telefona - rado ćemo vam pomoći!
           </p>
         </motion.div>
 
