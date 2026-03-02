@@ -14,7 +14,12 @@ const Footer = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <img src={logo} alt="Šajkaška Sladoteka" className="h-16 md:h-20 w-auto mx-auto mb-2 rounded-lg" />
+          <div className="mx-auto mb-3 h-14 md:h-16 w-14 md:w-16 bg-white/90 rounded-full p-2 flex items-center justify-center">
+            <img src={logo} alt="Šajkaška Sladoteka" className="h-full w-full object-contain" />
+          </div>
+          <h3 className="font-display text-2xl md:text-3xl text-primary-foreground mb-2">
+            Šajkaška <span className="italic text-gradient-gold">Sladoteka</span>
+          </h3>
           <p className="text-primary-foreground/50 font-body text-sm mb-8">
             Domaće torte i kolači — Sajkaš, Vojvodina
           </p>

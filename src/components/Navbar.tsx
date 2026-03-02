@@ -32,8 +32,11 @@ const Navbar = () => {
       }`}
     >
       <div className="container max-w-6xl mx-auto px-6 flex items-center justify-between h-16 md:h-20">
-        <a href="#" className="flex items-center gap-2 group">
-          <img src={logo} alt="Šajkaška Sladoteka" className="h-12 md:h-16 w-auto rounded-lg" />
+        <a href="#" className="flex items-center gap-3 group">
+          <img src={logo} alt="Šajkaška Sladoteka" className={`h-10 md:h-12 w-auto transition-all duration-300 ${scrolled ? "mix-blend-multiply" : "mix-blend-screen invert"}`} />
+          <span className={`font-display text-lg md:text-xl transition-colors duration-300 ${scrolled ? "text-foreground" : "text-primary-foreground"}`}>
+            Šajkaška <span className={`italic ${scrolled ? "text-primary" : "text-gradient-gold"}`}>Sladoteka</span>
+          </span>
         </a>
 
         {/* Desktop */}
