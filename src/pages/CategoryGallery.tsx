@@ -1,4 +1,5 @@
-﻿import { useParams, Link } from "react-router-dom";
+﻿import { useEffect } from "react";
+import { useParams, Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import {
   ArrowLeft,
@@ -108,6 +109,10 @@ const CategoryGallery = () => {
   const { category } = useParams<{ category: string }>();
   const data = categoryData[category as CategoryKey];
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [category]);
+
   if (!data) {
     return (
       <div className="min-h-screen flex flex-col">
@@ -210,3 +215,5 @@ const CategoryGallery = () => {
 };
 
 export default CategoryGallery;
+
+

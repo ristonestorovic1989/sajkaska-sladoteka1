@@ -19,7 +19,7 @@ const contacts = [
     color: "blue",
   },
   {
-    href: "tel:+381600000000",
+    href: "tel:+381666865062",
     icon: Phone,
     title: "Telefon",
     subtitle: "Pozovite nas",

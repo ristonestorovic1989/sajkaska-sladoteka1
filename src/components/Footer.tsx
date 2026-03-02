@@ -48,18 +48,19 @@ const Footer = () => {
             &copy; {new Date().getFullYear()} Šajkaška Sladoteka. Napravljeno sa
             <Heart className="inline h-3 w-3 text-primary" />
           </p>
-          <p className="mt-3 text-xs font-body text-primary-foreground/45">
-            Sajt radio{" "}
-            <a
-              href="https://www.instagram.com/ristonestorovic/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-primary-foreground/80 underline underline-offset-4 transition-colors hover:text-primary"
-            >
-              RISTO
-            </a>
-          </p>
         </motion.div>
+
+        <p className="absolute bottom-3 right-6 text-[11px] font-body tracking-[0.08em] uppercase text-primary-foreground/40">
+          Dizajn i izrada:{" "}
+          <a
+            href="https://www.instagram.com/ristonestorovic/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-primary-foreground/75 transition-colors hover:text-primary"
+          >
+            RISTO
+          </a>
+        </p>
       </div>
     </footer>
   );
