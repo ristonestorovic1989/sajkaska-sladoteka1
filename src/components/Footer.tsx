@@ -14,7 +14,7 @@ const Footer = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <img src={logo} alt="Šajkaška Sladoteka" className="h-16 md:h-20 w-auto mx-auto mb-2 invert brightness-200" />
+          <img src={logo} alt="Šajkaška Sladoteka" className="h-16 md:h-20 w-auto mx-auto mb-2 rounded-lg" />
           <p className="text-primary-foreground/50 font-body text-sm mb-8">
             Domaće torte i kolači — Sajkaš, Vojvodina
           </p>
