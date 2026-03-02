@@ -33,7 +33,7 @@ const Navbar = () => {
     >
       <div className="container max-w-6xl mx-auto px-6 flex items-center justify-between h-16 md:h-20">
         <a href="#" className="flex items-center gap-2 group">
-          <img src={logo} alt="Šajkaška Sladoteka" className="h-10 md:h-14 w-auto" />
+          <img src={logo} alt="Šajkaška Sladoteka" className="h-12 md:h-16 w-auto rounded-lg" />
         </a>
 
         {/* Desktop */}
