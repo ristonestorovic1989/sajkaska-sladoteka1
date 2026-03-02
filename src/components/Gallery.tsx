@@ -20,7 +20,7 @@ const Gallery = () => {
     <section id="galerija" className="py-24 md:py-32 bg-blue-light relative overflow-hidden">
       <div className="absolute top-0 left-1/2 w-[600px] h-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary/5 blur-3xl" />
 
-      <div className="container max-w-6xl mx-auto px-6 relative z-10">
+      <div className="container max-w-7xl mx-auto px-6 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -43,38 +43,49 @@ const Gallery = () => {
           </div>
         </motion.div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6">
-          {categories.map((cat, i) => (
-            <motion.div
-              key={cat.slug}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-50px" }}
-              transition={{ duration: 0.6, delay: i * 0.1 }}
-              whileHover={{ y: -6 }}
-            >
-              <Link
-                to={`/galerija/${cat.slug}`}
-                className="block group relative aspect-[3/4] rounded-2xl overflow-hidden shadow-md hover:shadow-xl hover:shadow-primary/15 transition-all duration-500"
+        {/* Bento grid layout */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 auto-rows-[180px] md:auto-rows-[220px]">
+          {categories.map((cat, i) => {
+            // First item spans 2 cols + 2 rows for hero effect
+            const isHero = i === 0;
+            const isTall = i === 2;
+
+            return (
+              <motion.div
+                key={cat.slug}
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{ duration: 0.6, delay: i * 0.1 }}
+                className={`${isHero ? "col-span-2 row-span-2" : ""} ${isTall ? "row-span-2" : ""}`}
               >
-                <img
-                  src={cat.image}
-                  alt={cat.label}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                  loading="lazy"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/20 to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 p-4 text-center">
-                  <h3 className="font-display text-lg md:text-xl text-primary-foreground">
-                    {cat.label}
-                  </h3>
-                  <span className="text-primary-foreground/70 font-body text-xs tracking-wider uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    Pogledaj →
-                  </span>
-                </div>
-              </Link>
-            </motion.div>
-          ))}
+                <Link
+                  to={`/galerija/${cat.slug}`}
+                  className="block group relative w-full h-full rounded-2xl overflow-hidden shadow-md hover:shadow-2xl hover:shadow-primary/20 transition-all duration-500"
+                >
+                  <img
+                    src={cat.image}
+                    alt={cat.label}
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 via-foreground/10 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-500" />
+                  <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-colors duration-500" />
+                  <div className="absolute bottom-0 left-0 right-0 p-5 md:p-6">
+                    <h3 className={`font-display text-primary-foreground ${isHero ? "text-2xl md:text-3xl" : "text-lg md:text-xl"}`}>
+                      {cat.label}
+                    </h3>
+                    <div className="flex items-center gap-2 mt-1 translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
+                      <div className="w-6 h-px bg-primary-foreground/60" />
+                      <span className="text-primary-foreground/80 font-body text-xs tracking-wider uppercase">
+                        Pogledaj
+                      </span>
+                    </div>
+                  </div>
+                </Link>
+              </motion.div>
+            );
+          })}
         </div>
       </div>
     </section>
