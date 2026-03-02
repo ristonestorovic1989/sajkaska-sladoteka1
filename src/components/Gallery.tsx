@@ -4,14 +4,13 @@ import { Cake, CakeSlice, IceCreamCone, Cookie, Cherry, Croissant } from "lucide
 import gallery1 from "@/assets/gallery-1.jpg";
 import catSitniKolaci from "@/assets/cat-sitni-kolaci.jpg";
 import catPalacinke from "@/assets/cat-palacinke.jpg";
-import catKupovi from "@/assets/cat-kupovi.jpg";
+
 import catSladoled from "@/assets/cat-sladoled.jpg";
 
 const categories = [
   { slug: "torte", label: "Torte", image: gallery1 },
   { slug: "sitni-kolaci", label: "Sitni kolači", image: catSitniKolaci },
   { slug: "palacinke", label: "Palačinke", image: catPalacinke },
-  { slug: "kupovi", label: "Kupovi", image: catKupovi },
   { slug: "sladoled", label: "Sladoled", image: catSladoled },
 ];
 
