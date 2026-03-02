@@ -101,8 +101,27 @@ const CategoryGallery = () => {
     <div className="min-h-screen flex flex-col">
       <Navbar />
 
-      <main className="flex-1 pt-24 md:pt-32 pb-16 bg-blue-light">
-        <div className="container max-w-6xl mx-auto px-6">
+      <main className="flex-1 pt-24 md:pt-32 pb-16 bg-blue-light relative overflow-hidden">
+        {/* Decorative background images */}
+        <div className="absolute inset-0 pointer-events-none select-none">
+          {data.images.slice(0, 3).map((img, i) => (
+            <img
+              key={i}
+              src={img.src}
+              alt=""
+              aria-hidden="true"
+              className="absolute opacity-[0.04] blur-[2px] w-48 md:w-72"
+              style={{
+                top: `${15 + i * 30}%`,
+                left: i % 2 === 0 ? '-3%' : undefined,
+                right: i % 2 !== 0 ? '-3%' : undefined,
+                transform: `rotate(${i % 2 === 0 ? -12 : 12}deg)`,
+              }}
+            />
+          ))}
+        </div>
+
+        <div className="container max-w-6xl mx-auto px-6 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -145,12 +164,12 @@ const CategoryGallery = () => {
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5, delay: i * 0.08 }}
                   whileHover={{ scale: 1.03 }}
-                  className="group relative aspect-square rounded-2xl overflow-hidden cursor-pointer shadow-md hover:shadow-xl hover:shadow-primary/10 transition-shadow duration-500"
+                  className="group relative aspect-square rounded-2xl overflow-hidden cursor-pointer shadow-md hover:shadow-xl hover:shadow-primary/10 transition-shadow duration-500 bg-card"
                 >
                   <img
                     src={img.src}
                     alt={img.alt}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    className="w-full h-full object-contain p-2 transition-transform duration-700 group-hover:scale-105"
                     loading="lazy"
                   />
                 </motion.div>
