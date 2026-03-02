@@ -14,14 +14,9 @@ const Footer = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <div className="flex items-center justify-center gap-2 mb-2">
-            <img src={logoInverted} alt="Logo" className="h-14 md:h-16 w-auto" style={{ mixBlendMode: "screen" }} />
-            <div className="font-display text-2xl md:text-3xl text-primary-foreground leading-tight">
-              <span>Šajkaška</span>
-              <br />
-              <span className="italic text-gradient-gold text-xl md:text-2xl">Sladoteka</span>
-            </div>
-          </div>
+          <h3 className="font-display text-2xl md:text-3xl text-primary-foreground mb-2">
+            Šajkaška <span className="italic text-gradient-gold">Sladoteka</span>
+          </h3>
           <p className="text-primary-foreground/50 font-body text-sm mb-8">
             Domaće torte i kolači — Sajkaš, Vojvodina
           </p>
