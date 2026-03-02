@@ -50,18 +50,19 @@ const Footer = () => {
           </p>
         </motion.div>
 
-        <p className="absolute bottom-3 right-6 text-[11px] font-body tracking-[0.08em] uppercase text-primary-foreground/40">
-          Dizajn i izrada:{" "}
-          <a
-            href="https://www.instagram.com/ristonestorovic/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-primary-foreground/75 transition-colors hover:text-primary"
-          >
-            RISTO
-          </a>
-        </p>
       </div>
+
+      <p className="absolute bottom-5 right-5 z-20 text-[11px] font-body tracking-[0.08em] uppercase text-primary-foreground/40">
+        Dizajn i izrada:{" "}
+        <a
+          href="https://www.instagram.com/ristonestorovic/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-primary-foreground/75 transition-colors hover:text-primary"
+        >
+          RISTO
+        </a>
+      </p>
     </footer>
   );
 };
