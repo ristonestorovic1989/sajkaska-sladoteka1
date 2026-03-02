@@ -53,12 +53,6 @@ const categoryData: Record<CategoryKey, CategoryData> = {
       { src: torta8, alt: "Svadbena torta sa zlatnim postoljem" },
       { src: torta9, alt: "Dečija torta sa medvedićem i balonima" },
       { src: torta10, alt: "Crno-zlatna torta za 18. rođendan" },
-      { src: gallery1, alt: "Elegantna torta sa cvetnim detaljima" },
-      { src: gallery2, alt: "Rođendanska torta sa zlatnim ukrasima" },
-      { src: gallery3, alt: "Svadbena torta sa ružama" },
-      { src: gallery4, alt: "Dečija torta sa šarenim motivima" },
-      { src: gallery5, alt: "Luksuzna torta sa fondanom" },
-      { src: gallery6, alt: "Tematska torta za posebne prilike" },
     ],
   },
   "sitni-kolaci": {
