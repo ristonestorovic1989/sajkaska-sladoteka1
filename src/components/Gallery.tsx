@@ -20,6 +20,25 @@ const Gallery = () => {
     <section id="galerija" className="py-24 md:py-32 bg-blue-light relative overflow-hidden">
       <div className="absolute top-0 left-1/2 w-[600px] h-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary/5 blur-3xl" />
 
+      {/* Decorative background images */}
+      <div className="absolute inset-0 pointer-events-none select-none">
+        {categories.slice(0, 3).map((cat, i) => (
+          <img
+            key={cat.slug}
+            src={cat.image}
+            alt=""
+            aria-hidden="true"
+            className="absolute opacity-[0.04] blur-[2px] w-48 md:w-72"
+            style={{
+              top: `${10 + i * 30}%`,
+              left: i % 2 === 0 ? '-3%' : undefined,
+              right: i % 2 !== 0 ? '-3%' : undefined,
+              transform: `rotate(${i % 2 === 0 ? -12 : 12}deg)`,
+            }}
+          />
+        ))}
+      </div>
+
       <div className="container max-w-7xl mx-auto px-6 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
