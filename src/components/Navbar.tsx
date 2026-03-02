@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import logo from "@/assets/logo.png";
 import { motion, AnimatePresence } from "framer-motion";
 
 const navLinks = [
@@ -31,13 +32,8 @@ const Navbar = () => {
       }`}
     >
       <div className="container max-w-6xl mx-auto px-6 flex items-center justify-between h-16 md:h-20">
-        <a href="#" className="font-display text-xl md:text-2xl group">
-          <span className={`transition-colors duration-300 ${scrolled ? "text-foreground" : "text-primary-foreground"}`}>
-            Sajkaška{" "}
-          </span>
-          <span className={`italic transition-all duration-300 ${scrolled ? "text-primary" : "text-gradient-gold"}`}>
-            Sladoteka
-          </span>
+        <a href="#" className="flex items-center gap-2 group">
+          <img src={logo} alt="Šajkaška Sladoteka" className="h-10 md:h-14 w-auto" />
         </a>
 
         {/* Desktop */}
