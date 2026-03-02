@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Instagram, Facebook, Heart } from "lucide-react";
-import logo from "@/assets/logo.png";
+import logoInverted from "@/assets/logo-inverted.png";
 
 const Footer = () => {
   return (
@@ -14,7 +14,20 @@ const Footer = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          
+          <div 
+            className="h-20 md:h-24 w-20 md:w-24 mx-auto mb-3 bg-primary-foreground"
+            style={{ 
+              WebkitMaskImage: `url(${logoInverted})`, 
+              maskImage: `url(${logoInverted})`, 
+              WebkitMaskSize: "contain", 
+              maskSize: "contain", 
+              WebkitMaskRepeat: "no-repeat", 
+              maskRepeat: "no-repeat",
+              WebkitMaskPosition: "center",
+              maskPosition: "center",
+              maskMode: "luminance"
+            } as React.CSSProperties} 
+          />
           <h3 className="font-display text-2xl md:text-3xl text-primary-foreground mb-2">
             Šajkaška <span className="italic text-gradient-gold">Sladoteka</span>
           </h3>

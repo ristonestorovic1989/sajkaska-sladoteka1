@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import logo from "@/assets/logo.png";
+import logoInverted from "@/assets/logo-inverted.png";
 import { motion, AnimatePresence } from "framer-motion";
 
 const navLinks = [
@@ -33,7 +34,20 @@ const Navbar = () => {
     >
       <div className="container max-w-6xl mx-auto px-6 flex items-center justify-between h-16 md:h-20">
         <a href="#" className="flex items-center gap-3 group">
-          <img src={logo} alt="Šajkaška Sladoteka" className={`h-14 md:h-20 w-auto transition-all duration-300 ${scrolled ? "mix-blend-multiply" : "invert mix-blend-screen"}`} />
+          <div 
+            className={`h-14 md:h-20 w-14 md:w-20 transition-all duration-300 ${scrolled ? "bg-foreground" : "bg-primary-foreground"}`}
+            style={{ 
+              WebkitMaskImage: `url(${logoInverted})`, 
+              maskImage: `url(${logoInverted})`, 
+              WebkitMaskSize: "contain", 
+              maskSize: "contain", 
+              WebkitMaskRepeat: "no-repeat", 
+              maskRepeat: "no-repeat",
+              WebkitMaskPosition: "center",
+              maskPosition: "center",
+              maskMode: "luminance"
+            } as React.CSSProperties} 
+          />
           <span className={`font-display text-lg md:text-xl transition-colors duration-300 ${scrolled ? "text-foreground" : "text-primary-foreground"}`}>
             Šajkaška <span className={`italic ${scrolled ? "text-primary" : "text-gradient-gold"}`}>Sladoteka</span>
           </span>
