@@ -29,6 +29,12 @@ import palacinka3 from "@/assets/palacinka-3.jpg";
 import palacinka4 from "@/assets/palacinka-4.jpg";
 import palacinka5 from "@/assets/palacinka-5.jpg";
 import palacinka6 from "@/assets/palacinka-6.jpg";
+import torta11 from "@/assets/torta-11.jpg";
+import torta12 from "@/assets/torta-12.jpg";
+import torta13 from "@/assets/torta-13.jpg";
+import torta14 from "@/assets/torta-14.jpg";
+import torta15 from "@/assets/torta-15.jpg";
+import torta16 from "@/assets/torta-16.jpg";
 
 type CategoryKey = "torte" | "sitni-kolaci" | "palacinke" | "kupovi" | "sladoled";
 
@@ -53,6 +59,12 @@ const categoryData: Record<CategoryKey, CategoryData> = {
       { src: torta8, alt: "Svadbena torta sa zlatnim postoljem" },
       { src: torta9, alt: "Dečija torta sa medvedićem i balonima" },
       { src: torta10, alt: "Crno-zlatna torta za 18. rođendan" },
+      { src: torta11, alt: "Plavo-zlatna torta za 18. rođendan sa balonima" },
+      { src: torta12, alt: "Svadbena torta sa ružama na drvenom postolju" },
+      { src: torta13, alt: "Ružičasta torta sa makaronima i ružama za 18. rođendan" },
+      { src: torta14, alt: "Bela torta sa zlatnim srcima" },
+      { src: torta15, alt: "Ružičasta torta sa jagodama za 19. rođendan" },
+      { src: torta16, alt: "Crno-zlatna torta sa natpisom Luka" },
     ],
   },
   "sitni-kolaci": {
