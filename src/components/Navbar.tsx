@@ -33,18 +33,13 @@ const Navbar = () => {
       }`}
     >
       <div className="container max-w-6xl mx-auto px-6 flex items-center justify-between h-16 md:h-20">
-        <a href="#" className="flex items-center gap-1.5 group">
-          <img 
-            src={scrolled ? logo : logoInverted} 
-            alt="Logo" 
-            className="h-10 md:h-14 w-auto mix-blend-multiply"
-            style={scrolled ? {} : { mixBlendMode: "screen" }}
-          />
-          <div className={`font-display text-lg md:text-xl leading-tight transition-colors duration-300 ${scrolled ? "text-foreground" : "text-primary-foreground"}`}>
-            <span>Šajkaška</span>
-            <br />
-            <span className={`italic text-sm md:text-base ${scrolled ? "text-primary" : "text-gradient-gold"}`}>Sladoteka</span>
-          </div>
+        <a href="#" className="font-display text-xl md:text-2xl group">
+          <span className={`transition-colors duration-300 ${scrolled ? "text-foreground" : "text-primary-foreground"}`}>
+            Šajkaška{" "}
+          </span>
+          <span className={`italic transition-all duration-300 ${scrolled ? "text-primary" : "text-gradient-gold"}`}>
+            Sladoteka
+          </span>
         </a>
 
         {/* Desktop */}
