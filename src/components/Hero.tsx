@@ -37,7 +37,7 @@ const Hero = () => {
           transition={{ duration: 1, delay: 0.1 }}
           className="inline-flex items-center gap-2 px-5 py-2 rounded-full border border-primary-foreground/20 bg-primary-foreground/5 backdrop-blur-sm mb-8"
         >
-          <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
+          
           <span className="text-mint-light font-body text-xs tracking-[0.3em] uppercase">
             Domaće torte i kolači
           </span>
