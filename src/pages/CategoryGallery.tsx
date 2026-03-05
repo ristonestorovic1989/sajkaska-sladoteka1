@@ -44,6 +44,22 @@ import torta13 from "@/assets/torta-13.jpg";
 import torta14 from "@/assets/torta-14.jpg";
 import torta15 from "@/assets/torta-15.jpg";
 import torta16 from "@/assets/torta-16.jpg";
+import sitniKolaci1 from "@/assets/sitni-kolaci-1.jpg";
+import sitniKolaci2 from "@/assets/sitni-kolaci-2.jpg";
+import sitniKolaci3 from "@/assets/sitni-kolaci-3.jpg";
+import sitniKolaci4 from "@/assets/sitni-kolaci-4.jpg";
+import sitniKolaci5 from "@/assets/sitni-kolaci-5.jpg";
+import sitniKolaci6 from "@/assets/sitni-kolaci-6.jpg";
+import sitniKolaci7 from "@/assets/sitni-kolaci-7.jpg";
+import sladoled1 from "@/assets/sladoled-1.jpg";
+import sladoled2 from "@/assets/sladoled-2.jpg";
+import sladoled3 from "@/assets/sladoled-3.jpg";
+import sladoled4 from "@/assets/sladoled-4.jpg";
+import sladoled5 from "@/assets/sladoled-5.jpg";
+import sladoled6 from "@/assets/sladoled-6.jpg";
+import sladoled7 from "@/assets/sladoled-7.jpg";
+import sladoled8 from "@/assets/sladoled-8.jpg";
+import sladoled9 from "@/assets/sladoled-9.jpg";
 
 type CategoryKey = "torte" | "sitni-kolaci" | "palacinke" | "kupovi" | "sladoled";
 
@@ -79,7 +95,16 @@ const categoryData: Record<CategoryKey, CategoryData> = {
   "sitni-kolaci": {
     title: "Sitni kolači",
     subtitle: "Domaći kolači za svaki slatki sto",
-    images: [{ src: catSitniKolaci, alt: "Kutije sitnih kolača" }],
+    images: [
+      { src: catSitniKolaci, alt: "Kutije sitnih kolača" },
+      { src: sitniKolaci1, alt: "Mešani sitni kolači na tacni" },
+      { src: sitniKolaci2, alt: "Dezert kupovi na crnom poslužavniku" },
+      { src: sitniKolaci3, alt: "Kutija sitnih kolača sa kuglicama i rolnom" },
+      { src: sitniKolaci4, alt: "Više kutija sitnih kolača za posluženje" },
+      { src: sitniKolaci5, alt: "Pakovanje sitnih kolača u providnoj kutiji" },
+      { src: sitniKolaci6, alt: "Dve kutije sitnih kolača na crnoj pozadini" },
+      { src: sitniKolaci7, alt: "Asortiman sitnih kolača sa čokoladnim prelivom" },
+    ],
   },
   palacinke: {
     title: "Palačinke",
@@ -101,7 +126,18 @@ const categoryData: Record<CategoryKey, CategoryData> = {
   sladoled: {
     title: "Sladoled",
     subtitle: "Kremasti sladoledi sa raznim prelivima",
-    images: [{ src: catSladoled, alt: "Sladoled u čaši sa čokoladnim prelivom" }],
+    images: [
+      { src: catSladoled, alt: "Sladoled u čaši sa čokoladnim prelivom" },
+      { src: sladoled1, alt: "Asortiman sladoleda sa različitim prelivima" },
+      { src: sladoled2, alt: "Sladoled sa čokoladnim prelivom i dekoracijom" },
+      { src: sladoled3, alt: "Sladoled u čaši sa voćnim dodatkom" },
+      { src: sladoled4, alt: "Kremasti sladoled sa čokoladom i mrvicama" },
+      { src: sladoled5, alt: "Sladoled na poslužavniku za posluženje" },
+      { src: sladoled6, alt: "Mini kupovi sa sladoledom i prelivima" },
+      { src: sladoled7, alt: "Više ukusa sladoleda u čašama" },
+      { src: sladoled8, alt: "Sladoled sa dekoracijom od pistaća" },
+      { src: sladoled9, alt: "Sladoled sa voćnim i čokoladnim prelivom" },
+    ],
   },
 };
 

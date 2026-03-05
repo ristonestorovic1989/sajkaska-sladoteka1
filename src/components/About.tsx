@@ -1,5 +1,6 @@
 ﻿import { motion } from "framer-motion";
 import { Cake, Heart, Star } from "lucide-react";
+import aboutPortrait from "@/assets/about-portrait.jpg";
 
 const items = [
   {
@@ -34,6 +35,15 @@ const About = () => {
       {/* Decorative blobs */}
       <div className="absolute top-0 right-0 w-72 h-72 rounded-full bg-primary/5 blur-3xl -translate-y-1/2 translate-x-1/3" />
       <div className="absolute bottom-0 left-0 w-96 h-96 rounded-full bg-accent/5 blur-3xl translate-y-1/2 -translate-x-1/3" />
+      <div className="pointer-events-none absolute right-[-6%] top-1/2 hidden w-[360px] -translate-y-1/2 md:block lg:w-[440px]">
+        <img
+          src={aboutPortrait}
+          alt=""
+          aria-hidden="true"
+          className="h-auto w-full rotate-[-4deg] opacity-[0.14] blur-[0.6px]"
+          loading="lazy"
+        />
+      </div>
 
       <div className="container max-w-5xl mx-auto px-6 relative z-10">
         <motion.div
@@ -70,7 +80,22 @@ const About = () => {
             poseban trenutak zaslužuje savršen zalogaj.
           </p>
         </motion.div>
-
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ duration: 0.7 }}
+          className="mb-14 flex justify-center md:hidden"
+        >
+          <div className="w-full max-w-sm overflow-hidden rounded-[2rem] border border-primary/20 bg-white/60 p-2 shadow-[0_24px_60px_-30px_hsl(var(--foreground)/0.6)]">
+            <img
+              src={aboutPortrait}
+              alt="Ilustracija poslastičarke Šajkaška Sladoteka"
+              className="h-full w-full rounded-[1.5rem] object-cover"
+              loading="lazy"
+            />
+          </div>
+        </motion.div>
         <div className="grid md:grid-cols-3 gap-8 md:gap-12">
           {items.map((item, i) => (
             <motion.div
@@ -118,3 +143,6 @@ const About = () => {
 };
 
 export default About;
+
+
+
