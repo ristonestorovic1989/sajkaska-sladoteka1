@@ -31,11 +31,15 @@ const Navbar = () => {
       }`}
     >
       <div className="container max-w-6xl mx-auto px-6 flex items-center justify-between h-16 md:h-20">
-        <a href="#" className="font-display text-xl md:text-2xl group">
-          <span className={`transition-colors duration-300 ${scrolled ? "text-foreground" : "text-primary-foreground"}`}>
+        <a href="" className="font-display text-xl md:text-2xl group">
+          <span
+            className={`transition-colors duration-300 ${scrolled ? "text-foreground" : "text-primary-foreground"}`}
+          >
             Šajkaška{" "}
           </span>
-          <span className={`italic transition-all duration-300 ${scrolled ? "text-primary" : "text-gradient-gold"}`}>
+          <span
+            className={`italic transition-all duration-300 ${scrolled ? "text-primary" : "text-gradient-gold"}`}
+          >
             Sladoteka
           </span>
         </a>
@@ -56,9 +60,11 @@ const Navbar = () => {
               }`}
             >
               {link.label}
-              <span className={`absolute -bottom-1 left-0 h-px w-0 group-hover:w-full transition-all duration-300 ${
-                scrolled ? "bg-primary" : "bg-primary-foreground"
-              }`} />
+              <span
+                className={`absolute -bottom-1 left-0 h-px w-0 group-hover:w-full transition-all duration-300 ${
+                  scrolled ? "bg-primary" : "bg-primary-foreground"
+                }`}
+              />
             </motion.a>
           ))}
         </div>
@@ -68,7 +74,11 @@ const Navbar = () => {
           onClick={() => setMobileOpen(!mobileOpen)}
           className={`md:hidden ${scrolled ? "text-foreground" : "text-primary-foreground"}`}
         >
-          {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          {mobileOpen ? (
+            <X className="w-6 h-6" />
+          ) : (
+            <Menu className="w-6 h-6" />
+          )}
         </button>
       </div>
 
