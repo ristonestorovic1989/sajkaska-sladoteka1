@@ -31,7 +31,10 @@ const Navbar = () => {
       }`}
     >
       <div className="container max-w-6xl mx-auto px-6 flex items-center justify-between h-16 md:h-20">
-        <a href="" className="font-display text-xl md:text-2xl group">
+        <a
+          href="https://sajkaska-sladoteka.com/"
+          className="font-display text-xl md:text-2xl group"
+        >
           <span
             className={`transition-colors duration-300 ${scrolled ? "text-foreground" : "text-primary-foreground"}`}
           >
