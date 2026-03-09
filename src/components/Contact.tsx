@@ -1,5 +1,11 @@
 ﻿import { motion } from "framer-motion";
-import { Instagram, Facebook, Phone, MapPin, ArrowUpRight } from "lucide-react";
+import {
+  Instagram,
+  Facebook,
+  Phone,
+  Mail,
+  ArrowUpRight,
+} from "lucide-react";
 
 const contacts = [
   {
@@ -22,17 +28,17 @@ const contacts = [
     href: "tel:+381666865062",
     icon: Phone,
     title: "Telefon",
-    subtitle: "Pozovite nas",
+    subtitle: "066 686 5062",
     external: false,
     color: "accent",
   },
   {
-    href: null,
-    icon: MapPin,
-    title: "Lokacija",
-    subtitle: "Nikole Tesle 41, 21244, Šajkaš",
+    href: "mailto:sajkaskasladoteka@gmail.com",
+    icon: Mail,
+    title: "Email",
+    subtitle: "sajkaskasladoteka@gmail.com",
     external: false,
-    color: "primary",
+    color: "accent",
   },
 ];
 
@@ -72,7 +78,7 @@ const Contact = () => {
           </p>
         </motion.div>
 
-        <div className="grid sm:grid-cols-2 gap-6">
+        <div className="grid gap-6 sm:grid-cols-2">
           {contacts.map((item, i) => {
             const Wrapper = item.href ? "a" : "div";
             const wrapperProps = item.href
